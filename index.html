@@ -1,0 +1,76 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M4 Assignment: Fonts, Colors, and Pseudo Classes</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #4CAF50;
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    /* Pseudo-classes for links */
+    a:link {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: orange;
+    }
+
+    /* Image map styling */
+    img {
+      margin-top: 20px;
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My M4 Assignment</h1>
+  <p>This page demonstrates fonts, colors, pseudo-classes, a Google font, and a clickable image map.</p>
+  
+  <p>
+    Check out 
+    <a href="https://www.google.com" target="_blank">Google</a> 
+    to see how link styles change with pseudo-classes.
+  </p>
+  
+  <!-- Clickable image (image map) -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" alt="Sample Image" usemap="#examplemap" width="400">
+  
+  <map name="examplemap">
+    <area shape="rect" coords="0,0,200,200" href="https://www.wikipedia.org" alt="Wikipedia" target="_blank">
+    <area shape="rect" coords="200,0,400,200" href="https://www.github.com" alt="GitHub" target="_blank">
+  </map>
+</body>
+</html>
+
